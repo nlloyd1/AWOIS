@@ -1,0 +1,37 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>AWOIS Shipwreck Locations</title>
+  
+  <link rel="stylesheet" href="style.css">
+  <!--<script src="script.js"></script>-->
+
+  <link rel="stylesheet" href="https://js.arcgis.com/4.19/esri/themes/light/main.css">
+  <script src="https://js.arcgis.com/4.26/"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <div id="viewDiv">
+    <div id="infoDiv" class="esri-widget">
+      <div id="summary">
+        <h4>Description</h4>
+        <p>Collection of shipwrecks charted by NOAA's Automated Wreck and Obstruction Information System (AWOIS) in United States Coastal Waters.</p>
+        <i>Data Source: https://www.nauticalcharts.noaa.gov/data/wrecks-and-obstructions.html</i>
+        <br>
+      </div>
+      <h3 style="padding: 5px">Legend</h3>
+      <div id="legendDiv"></div>
+      <label>Visualization Technique</label>
+      <select name="visualization-dropdown" id="visPatternDropdown">
+        <option value="None">None</option>
+        <option value="Clustering">Clustering</option>
+        <option value="Binning">Binning</option>
+        <option value="Heatmap">Heatmap</option>
+        <option value="Bloom">Bloom</option>
+      </select>
+    </div>
+  </div>
+</body>
+</html>
