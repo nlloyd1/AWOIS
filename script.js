@@ -118,11 +118,11 @@ require([
       type: "heatmap",
       colorStops: [
         { color: "rgba(0, 0, 0, 0)", ratio: 0 },
-        { color: "#c79185", ratio: 0.2 },
-        { color: "#c98171", ratio: 0.4 },
-        { color: "#c76b56", ratio: 0.6 },
-        { color: "#cc5d43", ratio: 0.8 },
-        { color: "#d1401f", ratio: 1}
+        { color: "#f7e7e6", ratio: 0.2 },
+        { color: "#d19792", ratio: 0.4 },
+        { color: "#de8983", ratio: 0.6 },
+        { color: "#e06f67", ratio: 0.8 },
+        { color: "#eb5146", ratio: 1}
       ],
       maxDensity: 0.01,
       minDensity: 0
@@ -135,7 +135,6 @@ require([
       url: "https://services.arcgis.com/XORNS2fPFySPlBgy/arcgis/rest/services/AWOIS_Wrecks/FeatureServer",
       effect: "bloom(1, 0px, 25%)"
    });
-    //map.add(heatmapLayer);
     // ===================================================================
     // ACCESSORIES
     // ===================================================================
